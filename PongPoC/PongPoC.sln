@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PongPoC", "PongPoC\PongPoC\PongPoC.csproj", "{FAA8C69A-F34A-4C39-B56E-86586FF8F646}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "PongPoCContent", "PongPoC\PongPoCContent\PongPoCContent.contentproj", "{5AAF2F5C-4272-4861-94D9-62C6FD389953}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAA8C69A-F34A-4C39-B56E-86586FF8F646}.Debug|x86.ActiveCfg = Debug|x86
+		{FAA8C69A-F34A-4C39-B56E-86586FF8F646}.Debug|x86.Build.0 = Debug|x86
+		{FAA8C69A-F34A-4C39-B56E-86586FF8F646}.Release|x86.ActiveCfg = Release|x86
+		{FAA8C69A-F34A-4C39-B56E-86586FF8F646}.Release|x86.Build.0 = Release|x86
+		{5AAF2F5C-4272-4861-94D9-62C6FD389953}.Debug|x86.ActiveCfg = Debug|x86
+		{5AAF2F5C-4272-4861-94D9-62C6FD389953}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
