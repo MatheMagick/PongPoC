@@ -1,5 +1,3 @@
-using System;
-
 namespace PongPoC
 {
 #if WINDOWS || XBOX
@@ -10,9 +8,13 @@ namespace PongPoC
         /// </summary>
         static void Main(string[] args)
         {
-            using (Game1 game = new Game1())
+            try
             {
-                game.Run();
+                PongGame.Instance.Run();
+            }
+            finally
+            {
+                PongGame.Instance.Dispose();
             }
         }
     }
