@@ -78,6 +78,7 @@
     <Compile Include="GameStates\Resolution.cs" />
     <Compile Include="IMenuItem.cs" />
     <Compile Include="Keyboardhandler.cs" />
+    <Compile Include="Orientation.cs" />
     <Compile Include="SelectionMenuItem.cs" />
     <Compile Include="TextMenuItem.cs" />
     <Compile Include="GameStates\GameOverMenuState.cs" />

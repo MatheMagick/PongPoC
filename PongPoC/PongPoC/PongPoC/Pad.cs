@@ -5,7 +5,7 @@ namespace PongPoC
 {
     internal abstract class Pad
     {
-        private readonly Texture2D _padTexture = TextureHelper.CreateSolidTexture(Width, Height, Color.White);
+        private readonly Texture2D _padTexture = TextureHelper.CreateSolidSquare(Width, Height, Color.White);
 
         public static int Width { get { return 20; } }
 

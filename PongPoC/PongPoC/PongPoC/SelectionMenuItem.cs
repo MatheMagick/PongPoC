@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -12,8 +8,9 @@ namespace PongPoC
     {
         private readonly string _label;
         private readonly T[] _items;
-        private readonly Texture2D _leftArrowTexture = TextureHelper.CreateSolidTexture(10, 10, Color.White);
-        private readonly Texture2D _rightArrowTexture = TextureHelper.CreateSolidTexture(10, 10, Color.White);
+
+        private readonly Texture2D _leftArrowTexture = TextureHelper.CreateSolidTriangle(10, 10, Color.White, Color.Black, Orientation.Left);
+        private readonly Texture2D _rightArrowTexture = TextureHelper.CreateSolidTriangle(10, 10, Color.White, Color.Black, Orientation.Right);
         private const float HorizontalDistanceBetweenItems = 10.0f;
         private int _selectedIndex;
 
@@ -78,7 +75,7 @@ namespace PongPoC
             float horizontalSize = labelSize.X + 3 * HorizontalDistanceBetweenItems + _leftArrowTexture.Width +
                                    optionTextSize.X + _rightArrowTexture.Width;
 
-            Vector2 itemPosition = new Vector2(((float)GlobalSettings.Width - horizontalSize ) / 2, currentPositionY);
+            Vector2 itemPosition = new Vector2((GlobalSettings.Width - horizontalSize ) / 2, currentPositionY);
             batch.DrawString(fontSprite, _label, itemPosition, color);
             itemPosition.X += (labelSize.X + HorizontalDistanceBetweenItems);
             itemPosition.Y += arrowOffset;

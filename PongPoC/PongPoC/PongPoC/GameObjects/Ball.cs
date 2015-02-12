@@ -15,7 +15,7 @@ namespace PongPoC.GameObjects
         public Ball(Vector2 position)
         {
             _position = position;
-            _ballTexture = TextureHelper.CreateSolidTexture(Width, Height, Color.White);
+            _ballTexture = TextureHelper.CreateSolidSquare(Width, Height, Color.White);
         }
 
         public Vector2 Position
