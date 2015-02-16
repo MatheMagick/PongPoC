@@ -71,7 +71,7 @@ namespace PongPoC
             string optionText = _items[_selectedIndex].ToString();
             var optionTextSize = fontSprite.MeasureString(optionText);
             float arrowOffset = (labelSize.Y - _leftArrowTexture.Height)/2;
-
+            var n = 5;
             float horizontalSize = labelSize.X + 3 * HorizontalDistanceBetweenItems + _leftArrowTexture.Width +
                                    optionTextSize.X + _rightArrowTexture.Width;
 
